@@ -1,7 +1,8 @@
 
-# 📱 Curious Cat tech test
+# 📱 Curious Cat Tech Test
 
 Author: Artur Marchetto
+Date: June 2023
 
 # 👦🏻 User Flow Requirements
 
