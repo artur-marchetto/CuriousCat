@@ -620,7 +620,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 35H5W8Q3C4;
+				DEVELOPMENT_TEAM = 64YCS4ARKE;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CuriousCat/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
@@ -653,7 +653,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 35H5W8Q3C4;
+				DEVELOPMENT_TEAM = 64YCS4ARKE;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CuriousCat/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";

@@ -30,7 +30,7 @@ struct HomeView: View {
                     .padding(.bottom, 20)
             }.padding()
 
-                .navigationTitle("Home")
+            .navigationTitle("Home")
         }
         .onAppear(perform: viewModel.onAppear)
     }
