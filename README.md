@@ -35,8 +35,8 @@ The app also contains some Utilities and standalone UI components.
 # ⏳ Time constraints
 
 The app only supports:
-- light mode
-- portait
+- Light mode only
+- Portait only
 - iPhone only
 
 # ❓ Tests
