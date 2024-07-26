@@ -49,7 +49,7 @@ However the general outline is there.
 
 # 📱 How to run the App
 
-- Use Xcode 14.3 Recommended
+- Use Xcode 15.4 Recommended
 - Change Developer Team in Project Settings
 
 Note:
