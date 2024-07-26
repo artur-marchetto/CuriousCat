@@ -57,7 +57,7 @@ struct OnboardingView: View {
                 .italic()
                 .multilineTextAlignment(.leading)
 
-            Text("Curiosity killed the cat. ☠️")
+            Text("But remember that curiosity killed the cat !")
                 .italic()
                 .padding(.bottom, 20)
 

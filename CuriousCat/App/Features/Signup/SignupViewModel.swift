@@ -11,6 +11,10 @@ import UIKit
 final class SignupViewModel: ObservableObject {
     @Published var email = ""
     @Published var phone = ""
+
+    @Published var errorMessage = ""
+    @Published var showErrorAlert = false
+
     @Published var verificationID = ""
     @Published var showPhoneVerification = false
     @Published var isTermsOfServiceAccepted = false
@@ -53,7 +57,8 @@ final class SignupViewModel: ObservableObject {
                     self?.showPhoneVerification = true
                 }
             } catch {
-                // Usually would show error to user
+                showErrorAlert = true
+                errorMessage = error.localizedDescription
                 print("Error occurred sending verification code", error)
             }
         }

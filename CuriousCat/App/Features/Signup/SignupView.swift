@@ -42,7 +42,15 @@ struct SignupView: View {
             }
             .navigationTitle("Create your account")
             .navigationViewStyle(.stack)
-        }.onTapGesture(perform: UIApplication.hideKeyboard)
+        }
+        .onTapGesture(perform: UIApplication.hideKeyboard)
+        .alert(isPresented: $viewModel.showErrorAlert) {
+            Alert(
+                title: Text("Oops, something went wrong!"),
+                message: Text(viewModel.errorMessage),
+                dismissButton: .cancel(Text("OK"))
+            )
+        }
     }
 
     // MARK: - Views

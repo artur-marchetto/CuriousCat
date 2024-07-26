@@ -12,6 +12,8 @@ final class PhoneVerificationViewModel: ObservableObject {
     private var verificationID: String
 
     @Published var smsCode = ""
+    @Published var showErrorAlert = false
+    @Published var errorMessage = ""
 
     init(
         currentView: Binding<AppView>,
@@ -30,7 +32,7 @@ final class PhoneVerificationViewModel: ObservableObject {
         Task {
             do {
                 let authService = AuthService()
-                print("march codes", smsCode, verificationID)
+                print("codes", smsCode, verificationID)
                 try await authService.signUserIn(
                     smsCode: smsCode,
                     verificationID: verificationID
@@ -40,7 +42,8 @@ final class PhoneVerificationViewModel: ObservableObject {
                     self?.currentView = .home
                 }
             } catch {
-                // Usually would show error to user
+                showErrorAlert = true
+                errorMessage = error.localizedDescription
                 print("Error occurred singing user in", error)
             }
         }
